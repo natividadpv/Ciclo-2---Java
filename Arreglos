@@ -1,0 +1,50 @@
+package com.udea.arreglos;
+
+public class Arreglos {
+
+    public static void main(String[] args) {
+        int[] arreglo_enteros={2,1,4,5,6};
+        //int[] arreglo_enteros_vacio=new int [5];
+        
+        //arreglo_enteros_vacio[2]=5;
+        
+        //Modificar algún elemento del arreglo:
+        arreglo_enteros[1]=3;
+        //Imprimir el elemento del arreglo
+        //System.out.println(arreglo_enteros[1]);
+        
+        //Imprimir todos los elementos del arreglo de izq a der:
+        for(int i=0; 
+                i<arreglo_enteros.length;//condicion de que no supere la longitud del arreglo
+                i++){//Condicion de aumentar de 1 en 1
+                System.out.println(arreglo_enteros[i]);
+        }
+        //Imprimir todos los elementos de derecha a izq
+        for(int i=arreglo_enteros.length-1;
+                i>-1;
+                i--){
+                System.out.println(arreglo_enteros[i]);
+        }
+        
+        /*For que interactua con arreglos, recorre todo el arreglo
+        FOR each*/
+        for(int k:arreglo_enteros){
+        System.out.println(k);
+        }//Se puede romper el recorrido conun break y una condición
+    
+        //Crear función ó método
+        public static int[] ejercicio(int[] a){
+        int[] respuesta=new int[2];
+        for(int i=0;
+            i<a.length;
+            i++){
+            if(a[i]%2==0){
+                respuesta[0]+=a[i];
+            }else
+            }
+        return respuesta;
+        }
+        
+        
+    }
+}
